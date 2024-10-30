@@ -12,3 +12,6 @@ Monipay motion exploration, where we feature interactions when users use the app
 ![Alt text](https://github.com/njiti/banking/blob/master/asset/4.jpeg?raw=true "Screen 4")
 ![Alt text](https://github.com/njiti/banking/blob/master/asset/5.jpeg?raw=true "Screen 5")
 ![Alt text](https://github.com/njiti/banking/blob/master/asset/6.jpeg?raw=true "Screen 5")
+<div align="center">
+  <img src ="https://github.com/njiti/banking/blob/master/asset/6.jpeg?raw=true" width="200" height="500"</img>
+</div>
