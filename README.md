@@ -7,27 +7,27 @@ Monipay motion exploration, where we feature interactions when users use the app
 
 # Screen Shots
 <div class="grid-container">
-  <div >
-    <img src ="https://github.com/njiti/banking/blob/master/asset/1.jpeg?raw=true" width="200" height="500"</img>1
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/1.jpeg?raw=true" width="200" height="500"</img>
   </div>
 
-  <div >
-    <img src ="https://github.com/njiti/banking/blob/master/asset/2.jpeg?raw=true" width="200" height="500"</img>2
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/2.jpeg?raw=true" width="200" height="500"</img>
   </div>
 
-  <div 
-    <img src ="https://github.com/njiti/banking/blob/master/asset/3.jpeg?raw=true" width="200" height="500"</img>3
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/3.jpeg?raw=true" width="200" height="500"</img>
   </div>
 
-  <div >
-    <img src ="https://github.com/njiti/banking/blob/master/asset/4.jpeg?raw=true" width="200" height="500"</img>4
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/4.jpeg?raw=true" width="200" height="500"</img>
   </div>
 
-  <div >
-    <img src ="https://github.com/njiti/banking/blob/master/asset/5.jpeg?raw=true" width="200" height="500"</img>5
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/5.jpeg?raw=true" width="200" height="500"</img>
   </div>
 
-  <div >
-    <img src ="https://github.com/njiti/banking/blob/master/asset/6.jpeg?raw=true" width="200" height="500"</img>6
+  <div class="grid-item">
+    <img src ="https://github.com/njiti/banking/blob/master/asset/6.jpeg?raw=true" width="200" height="500"</img>
   </div>
 </div>
