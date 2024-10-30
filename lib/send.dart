@@ -1,5 +1,6 @@
 import 'package:banking/done.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Send extends StatelessWidget {
   const Send({super.key});
@@ -103,15 +104,19 @@ class Send extends StatelessWidget {
               ),
             ),
 
-            const Padding(
-              padding: EdgeInsets.only(left: 150, top: 50),
+            Padding(
+              padding: const EdgeInsets.only(left: 150, top: 50),
               child: TextField(
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.black54,
                   fontSize: 40,
                 ),
-                decoration: InputDecoration(
+                keyboardType: TextInputType.number,
+                inputFormatters: <TextInputFormatter>[
+                  FilteringTextInputFormatter.digitsOnly
+                ],
+                decoration: const InputDecoration(
                   border: InputBorder.none,
                   prefixText: 'Rp ',
                   prefixStyle: TextStyle(
