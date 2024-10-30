@@ -3,4 +3,4 @@
 Monipay motion exploration, where we feature interactions when users use the app to check the transactions history, transfer money, and see information about MPayLater.
 
 # Screen Recording
-[![Watch the Video]()
+[![Watch the Video](https://youtu.be/E1UmTAYOLkE)
