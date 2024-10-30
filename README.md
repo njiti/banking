@@ -6,7 +6,10 @@ Monipay motion exploration, where we feature interactions when users use the app
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtube.com/shorts/N5VyAH-oMDg?feature=share)
 
 # Screen Shots
-<div class="grid-container">
+
+<html>
+  <body>
+    <div class="grid-container">
   <div class="grid-item">
     <img src ="https://github.com/njiti/banking/blob/master/asset/1.jpeg?raw=true" width="200" height="500"</img>
   </div>
@@ -31,3 +34,5 @@ Monipay motion exploration, where we feature interactions when users use the app
     <img src ="https://github.com/njiti/banking/blob/master/asset/6.jpeg?raw=true" width="200" height="500"</img>
   </div>
 </div>
+  </body>
+</html>
