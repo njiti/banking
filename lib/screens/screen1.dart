@@ -1,10 +1,15 @@
-import 'package:banking/screens/bankinfo.dart';
+import 'package:banking/bankinfo.dart';
 import 'package:banking/transfers.dart';
 import 'package:flutter/material.dart';
 
-class Screen1 extends StatelessWidget {
+class Screen1 extends StatefulWidget {
   const Screen1({super.key});
 
+  @override
+  State<Screen1> createState() => _Screen1State();
+}
+
+class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -599,6 +604,314 @@ class Screen1 extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white24,
+        ),
+        child: BottomAppBar(
+          elevation: 20,
+          color: Colors.white,
+          child: GestureDetector(
+            onTap: showMenu,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              height: 20,
+              width: 20,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+              ),
+              child: Center(
+                child: Container(
+                  width: 50,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
+  }
+
+  showMenu() {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return Container(
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(16.0),
+                topRight: Radius.circular(16.0),
+              ),
+              color: Colors.grey,
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget>[
+                Container(
+                  height: 36,
+                ),
+                SizedBox(
+                    height: (56 * 6).toDouble(),
+                    child: Container(
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(30.0),
+                            topRight: Radius.circular(30.0),
+                          ),
+                          color: Colors.white,
+                        ),
+                        child: Stack(
+                          alignment: const Alignment(0, 0),
+                          // overflow: Overflow.visible,
+                          children: <Widget>[
+                            Positioned(
+                              child: ListView(
+                                physics: const BouncingScrollPhysics(),
+                                children: <Widget>[
+                                  ListTile(
+                                    title: const Text(
+                                      "BurgerKong Gejayan",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orangeAccent.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                            color: Colors.deepOrange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  ListTile(
+                                    title: const Text(
+                                      "Top up saldo",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.purple.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.currency_exchange_outlined,
+                                            color: Colors.purple,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  ListTile(
+                                    title: const Text(
+                                      "BurgerKong Gejayan Kidul",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orangeAccent.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                            color: Colors.deepOrange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  ListTile(
+                                    title: const Text(
+                                      "BurgerKong Gejayan",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orangeAccent.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                            color: Colors.deepOrange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  ListTile(
+                                    title: const Text(
+                                      "BurgerKong Gejayan",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orangeAccent.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                            color: Colors.deepOrange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  ListTile(
+                                    title: const Text(
+                                      "BurgerKong Gejayan",
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                    subtitle: const Text(
+                                      "14 July 2024",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    trailing: const Text(
+                                      '-Rp39.600',
+                                      style: TextStyle(color: Colors.red),
+                                    ),
+                                    leading: Stack(
+                                      children: [
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orangeAccent.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(100),
+                                          ),
+                                          child: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                            color: Colors.deepOrange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    onTap: () {},
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 130),
+                                    child: Container(
+                                      width: 100,
+                                      height: 50,
+                                      decoration: BoxDecoration(
+                                        color: Colors.brown,
+                                        borderRadius: BorderRadius.circular(25),
+                                      ),
+                                      child: const Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "See All",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_downward,
+                                            color: Colors.orangeAccent,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  const Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Text(
+                                      'Statistics',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 21,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ))),
+                Container(
+                  height: 56,
+                  color: Colors.white,
+                )
+              ],
+            ),
+          );
+        });
   }
 }
