@@ -21,20 +21,20 @@ class _HomePageState extends State<HomePage> {
       extendBody: true,
       body: PageView(
         controller: pageController,
-        children: const [
-          Center(
+        children: [
+          const Center(
             child: Screen1(),
           ),
           Center(
             child: Screen2(),
           ),
-          Center(
+          const Center(
             child: Screen3(),
           ),
-          Center(
+          const Center(
             child: Screen4(),
           ),
-          Center(
+          const Center(
             child: Screen5(),
           ),
         ],
