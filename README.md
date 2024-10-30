@@ -8,6 +8,20 @@ Monipay motion exploration, where we feature interactions when users use the app
 # Screen Shots
 
 <html>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #ffffff;
+      padding: 10px;
+      }
+    .grid-item {
+      border: 1px solid #ffffff;
+      padding: 20px;
+      font_size: 30px;
+      text-align: center;
+      }
+  </style>
   <body>
     <div class="grid-container">
   <div class="grid-item">
