@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4a02edd5-9654-43ed-9d2e-102dad6c1514)![image](https://github.com/user-attachments/assets/b6c0152b-706b-4c4c-81f3-140996eb4106)# Monipay
+# Monipay
 
 Monipay motion exploration, where we feature interactions when users use the app to check the transactions history, transfer money, and see information about MPayLater.
 
