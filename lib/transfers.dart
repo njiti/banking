@@ -1,3 +1,4 @@
+import 'package:banking/send.dart';
 import 'package:flutter/material.dart';
 
 class Transfers extends StatefulWidget {
@@ -162,7 +163,9 @@ class _TransfersState extends State<Transfers> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: GestureDetector(
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Send()));
+                          },
                           child: ListTile(
                             leading: Container(
                               width: 50,
